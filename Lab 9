@@ -1,0 +1,98 @@
+#1
+r=int(input("Enter the radius "))
+c=2*3.14*r
+a=3.14*r*r
+print("Area is "+str(a))
+print("Perimeter is "+str(c))
+
+#2
+t=int(input("Enter the total marks "))
+s1=int(input("Enter the marks of subject1 "))
+s2=int(input("Enter the marks of subject2 "))
+s3=int(input("Enter the marks of subject3 "))
+s4=int(input("Enter the marks of subject4 "))
+s5=int(input("Enter the marks of subject5 "))
+avg=(s1+s2+s3+s4+s5)/5
+p=((s1+s2+s3+s4+s5)/t)*100
+print("The average is "+str(avg))
+print("The percentage is "+str(p))
+
+#3
+a=int(input("Enter the sides "))
+b=int(input())
+c=int(input())
+if ((a+b)>c) and ((b+c)>a) and ((a+c)>b):
+    print("Triangle is valid ")
+    s=(a+b+c)/2
+    
+    import math
+    
+    ar=math.sqrt(s*(s-a)*(s-b)*(s-c))
+    print("the area is  "+str(ar))
+else:
+    print("The triangle is invalid")
+
+#4
+f=int(input("Enter the height in ft "))
+i=int(input("Enter the height in inches "))
+h=((f*12)+i)*2.54
+print("The height is"+str(h))
+
+#5
+a=int(input("Enter the 4 digits "))
+sum=0
+for digit in str(a):
+    print(digit)
+    sum=sum+int(digit)
+    
+print("The sum is "+str(sum))
+
+#6
+sold=int(input("Enter the numbers of cameras sold "))
+price=int(input("Enter the price of the cameras "))
+salary=25000+(sold*200)
+total=sold*price
+commission=total*0.12
+totalsal=salary+commission
+print(commission)
+print("The total salary is "+str(totalsal))
+
+#7
+a=int(input('Enter the value of a '))
+b=int(input('Enter the value of b '))
+c=int(input('Enter the value of c '))
+d=(b*b-4*a*c)**0.5
+x1=(-b-d)/(2*a)
+x2=(-b+d)/(2*a)
+print('x1 = '+str(x1))
+print('x2 = '+str(x2))
+
+#8
+a=input('Enter the string of charecters ')
+b=a.upper()
+for i in str(b):
+    print(chr(ord(i))+":"+str(ord(i)))
+
+#9
+for i in range(100,200):
+    sum=0
+    for digit in str(i):
+        sum=sum+int(digit)
+      
+    if (sum%2)==0:
+        print(i)
+                
+#10
+i=int(input('Enter the number '))
+
+import math
+def Square(x):
+    s = int(math.sqrt(x))
+    return s*s == x
+def Fib(n):
+     return Square(5*n*n + 4) or Square(5*n*n - 4)     
+if(Fib(i)==True):
+    print(i, " is a fibonacci number ")
+else:
+    print(i, " is not a fibonacci number ")
+
